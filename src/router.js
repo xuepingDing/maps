@@ -33,6 +33,24 @@ let router =  new Router({
         keepAlive: true // 需要被缓存
       }
     },
+    {
+      path: "/home",
+      name: "home",
+      component: ()=> import("@/components/home") ,
+//    meta: {
+//      keepAlive: true // 需要被缓存
+//    }
+    },
+    {
+      path: "/min",
+      name: "min",
+      component: ()=> import("@/components/mixins") ,
+    },
+    {
+      path: "/father",
+      name: "father",
+      component: ()=> import("@/components/father/index") ,
+    },
   ]
 });
 export default router;

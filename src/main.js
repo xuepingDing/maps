@@ -4,10 +4,6 @@ import router from './router'
 
 Vue.config.productionTip = false
 
-//import Video from 'video.js'
-//import 'video.js/dist/video-js.css'
-
-//Vue.prototype.$video = Video
 
 new Vue({
 	router,
